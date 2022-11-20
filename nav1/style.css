@@ -1,0 +1,39 @@
+body {
+    margin: 0;
+}
+
+.main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: rgb(37, 34, 34);
+}
+
+.navbar{
+    padding: 17px;
+}
+
+.navbar a{
+    width: 100%;
+    color: white;
+    text-decoration: none;
+    font-size: x-large;
+}
+
+.navbarTags{
+    /* text-align: center; */
+    padding: 17px;
+    
+    width: 100%;
+    text-align: right;
+    
+}
+.navbarTags a{
+    text-decoration: none;
+    color: white;
+    font-size: large;
+    padding: 8px;
+}
+.navbarTags a:hover{
+    background-color: rgb(160, 155, 155);
+}
