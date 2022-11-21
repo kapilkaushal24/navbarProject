@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+body{
+    /* margin: 0px; */
+    background-color: #1b1b1b
+
+}
+nav{
+    display: flex;
+    height: 80px;
+    background-color: #1b1b1b;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 20px 0px 100px;
+    
+}
+/* nav::after{
+    content: '';
+    clear: both;
+    display: table;
+} */
+nav .logo{
+    float: left;
+    color: white;
+    font-size: 27px;
+    font-weight: 600;
+    line-height: 70px;
+    padding: 60px;
+}
+nav ul{
+    /* display: flex; */
+    list-style: none;
+    margin-right: 40px;
+
+}
+nav ul li{
+    display: flex;
+    line-height: 50px;
+    background-color: #1b1b1b;
+    display: inline-block;
+    margin: 0 5px;
+    
+}
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    line-height: 70px;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 8px 10px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+nav ul li a:hover,
+nav ul li a.active{
+    color: blueviolet;
+    /* border-radius: 5px; */
+
+}
+/* nav ul li a:hover, */
+nav ul li a.active1{
+    background: blueviolet;
+    color: white;
+
+}
+nav .menu-btn i{
+    color: white;
+    font-size: 22px;
+    cursor: pointer;
+    display: none;
+}
+nav ul li a.active1:hover{
+    transition: all 0.3s ease;
+    background: #1b1b1b;
+}
+nav ul ul{
+    position: absolute;
+    top: 90px;
+    border-top: 3px solid cyan;
+    opacity: 0;
+    visibility: hidden;
+    transition: top .3s;
+}
+nav ul li:hover > ul{
+    top: 70px;
+    opacity: 1;
+    visibility: visible;
+}
+nav ul ul li a:hover{
+    color: cyan;
+    box-shadow: none;
+
+}
+nav ul ul li{
+    position: relative;
+    margin: 0px;
+    width: 150px;
+    float: none;
+    display: list-item;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+}
+nav ul ul li a{
+    line-height: 50px;
+
+}
+/* nav ul ul ul li{
+    position: relative;
+    top: -70px;
+    left: 150px;
+} */
+nav .menuButton{
+    color: white;
+}
+#click{
+    display: none;
+}
+
+@media (max-width: 940px) {
+    nav ul{
+        position: fixed;
+        top: 80px;
+        left: -100%;
+        background: #1b1b1b;
+        height: 100vh;
+        width: 100%;
+        display: block;
+        text-align: center;
+        transition: all 0.3 ease;
+    }
+    #click:checked ~ ul{
+        left: 0%;
+    }
+    nav ul li{
+        margin: 0;
+    }
+    nav ul li a{
+        font-size: 20px;
+        display: block;
+    }
+    nav .menu-btn i{
+        display: block;
+    }
+    /* #click:checked ~  nav .menu-btn i::before{
+        content: "\f00d";
+    } */
+}
+
+
+
+
+
+
+
+.content{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+    color: white;
+    margin-top: 200px;
+  }
+  .content h1 p{
+    font-weight: 10;
+  }
+  button{
+    background-color: blueviolet;
+    color: white;
+    border: none;
+    width: 150px;
+    height: 40px;
+    border-radius: 2%;
+  }
+  button:hover{
+    background: #1b1b1b
+  }
+  
